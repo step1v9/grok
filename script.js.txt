@@ -1,0 +1,31 @@
+// Matchup data extracted from your MOBAFire guide (example entries)
+const matchups = {
+    "Aatrox": {
+        name: "Aatrox",
+        text: "Aatrox lvl 1 is really weak, what you want to do is zone him off the first 3 minions and if he tries to trade you continue fighting him, in the end you should end up with more hp and then just keep zoning until your 3rd wave crash into reset, after lvl 6 if he ever q+e forward on you look to spin on him and all in if you're the same hp you should win the all in as long as you dodge at least one sweet spot q with your e otherwise just spin away when he tries to hit q3."
+    },
+    "Ahri": {
+        name: "Ahri",
+        text: "Matchup is all about if you can dodge her e or not, you play around hitting her when she misses it and look to spin on her whenever she walks up too far, never try to all in her unless her e is down otherwise you just get cced into death, if you do manage to get her low enough you can towerdive her since trynd r counters her entire kit."
+    },
+    "Akali": {
+        name: "Akali",
+        text: "This matchup you don't really want to play all ins vs her since she has her shroud and is able to hit you a lot without you being able to hit her, I generally advise just hitting her whenever shroud is down and then trying to trade with her while spinning into her q so she can't hit you with it, you beat her if shroud is down otherwise just farm it out."
+    }
+    // Add more champions here following the same format
+};
+
+// Populate the champion list
+const championList = document.getElementById("champion-list");
+const championNameDisplay = document.getElementById("champion-name");
+const matchupTextDisplay = document.getElementById("matchup-text");
+
+Object.keys(matchups).forEach(champion => {
+    const li = document.createElement("li");
+    li.textContent = champion;
+    li.addEventListener("click", () => {
+        championNameDisplay.textContent = matchups[champion].name;
+        matchupTextDisplay.textContent = matchups[champion].text;
+    });
+    championList.appendChild(li);
+});

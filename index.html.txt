@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step1v9 - Tryndamere Matchup Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Tryndamere Matchups</h1>
+            <h3>Select a Champion</h3>
+            <ul id="champion-list"></ul>
+        </div>
+        <div class="main-content">
+            <h2 id="champion-name">Select a champion to view matchup</h2>
+            <p id="matchup-text">Click a champion from the list to see Tryndamere matchup details.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
